@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+
+        /* 1. 10 - 'это число' а "10" это строка, 10 складывается с 10 получается 20
+           2. 20 склеивается со строкой 10, получается 2010
+           3. 2010 присваиваем в переменную result 
+           4. с помощью console.log выводим result в консоль */
+        let result = 10 + 10 + "10";
+        console.log(result);
+
+         /* 1. 10 число склеивается с 10 строкой получается 1010  
+           2. 1010 склеивается с числом 10 получается 101010 
+           3. 101010 присваиваем в переменную result 
+           4. с помощью console.log выводим result в консоль */
+        let result = 10 + "10" + 10;
+        console.log(result);
+
+          /* 1. унарный плюч преобразует строку с число 
+           2. складываем три по десять получаем 30
+           3. 30 присваиваем в переменную result 
+           4. с помощью console.log выводим result в консоль */
+        let result = 10 + 10 + +"10";
+        console.log(result);
+
+       /* 1. унарный минус и ноль дают -0
+           2. 10 делим на -0 получччаем минус бесконечность 
+           3. -Infinity присваиваем в переменную result 
+           4. с помощью console.log выводим result в консоль */
+        let result = 10 / -"";
+        console.log(result);
+
+       /* 1. дробная часть указывается точкой, если указана запятая то это значит строка, унарный плюс тут роли не играет 
+           2. деление числа на строку дает NaN
+           3. NaN присваиваем в переменную result 
+           4. с помощью console.log выводим result в консоль */
+        let result = 10 / +"2,5";
+        console.log(result); 
+        
+    </script>
+</body>
+</html>
